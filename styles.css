@@ -6,7 +6,7 @@
 
 ul {
     list-style: none;
-}
+} /*esse código também limpa a configuração automatica que o navegador coloca*/
 
 body {
     background-image: url(./assets/bg.jpg);
@@ -14,17 +14,17 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-color: #121214;
-}
+} /*configura o plano de fundo com uma imagem no topo e embaixo de preto*/
 
 body * {
     font-family:"Inter", sans-serif;
     line-height: 160%;
-}
+} /* fonte da letra*/
 
 header {
     padding-top: 32px;
     height: calc(120px + 32px);
-}
+} /* configura para a foto do perfil que está no header ficar afastado dos cards e do topo da página*/
 
 header div {
     width: 120px;
@@ -37,16 +37,15 @@ header div {
     padding: 4px;
     transition: transform .3s;
     animation: fromTop .7s .4s backwards;
-}
-
+} /*faz com que atrás do card ficar com uma borda degrade só na parte de cima */
 header div:hover {
     transform: scale(1.1);
-}
+} /*quando passar o mouse em cima vai fazer uma animação de escala 1.1 */
 
 header div img {
     width: 100% ;
     border-radius: 50%;
-}
+} /*faz a imagem do header div ficar redonda e com uma borda entorno */
 
 main {
     max-width: 580px;
@@ -54,34 +53,33 @@ main {
     margin: 32px auto;
     display: grid;
     gap: 24px;
-}
-
+} /* faz os items ficarem um do lado do outro */
 section {
     color: white;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding-top: 4px;
     border-radius: 10px;
-}
+} /* faz uma borda degrade em cima da borda */
 
 section div {
     background-color: #2a2634;
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
-}
+} /* cria o 'cartaz' aonde os itens ficarão */
 
 section h2 {
     font-weight: 900;
     font-size: 24px;
     letter-spacing: -0.47px;
-}
+} /* muda a letra do h2 */
 
 section p {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.18px;
     color: #a1a1aa;
-}
+} /*muda o p do section */
 
 section ul {
     display: flex;
@@ -89,7 +87,7 @@ section ul {
     gap: 16px;
 
     margin-top: 24px;
-}
+} /* faz com que quando mais itens forem adicionados no cartaz ele nao aumente pros lados mais faz com que eles ficam um de baixo do outro */
 
 section ul li {
     transition: transform .3s;
