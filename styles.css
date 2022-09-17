@@ -91,38 +91,38 @@ section ul {
 
 section ul li {
     transition: transform .3s;
-}
+} /* faz com que a animação demore .3s pra acontecer */
 
 section ul li:hover {
     transform: scale(1.1);
-}
+} /* mesma coisa que o header */
 
 .games-list img {
     width: 90px;
-    border-radius: 8px;
-}
+    border-radius: 8px; 
+} /* configura os itens do game-list*/
 
 .channel-list img {
     border-radius: 50%;
     width: 70px;
     border: 1px solid rgba(68, 62, 84, 1)
-}
+} /* configura os itens do channel-list e com uma borda de 1px */
 
 main section {
     animation: fromBottom .7s backwards;
-}
+} /* faz uma animação de baixo pra cima */
 
 main section:nth-child(1) {
     animation-delay: 0;
-}
+} /* faz um delay no primeiro filho do section */ 
 
 main section:nth-child(2) {
     animation-delay: .4s;
-}
+} /* faz um delay no segundo filho do section */
 
 main section:nth-child(3) {
     animation-delay: .8s;
-}
+} /* faz um delay no terceiro filho do section */
 
 @keyframes fromTop {
     from {
@@ -134,7 +134,7 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} /* construi a função de animação fromTop */ 
 
 @keyframes fromBottom {
     from {
@@ -146,4 +146,4 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} /* construi a função fromBottom */
